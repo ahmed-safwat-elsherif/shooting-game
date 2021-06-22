@@ -1,0 +1,90 @@
+.w-50{
+    width:50%;
+    display: block;
+
+}
+
+.pointDisplay{
+    display: none;
+}
+
+.startDisplay{
+    display: none;
+    
+}
+.scoreDisplay{
+    display: none;
+}
+
+.firstDiv{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.firstDiv > * {
+    margin: 10px;
+
+
+}
+
+#playersList{
+    display: none;
+    width: 100%;
+    max-height: 400px;
+    overflow-y: scroll;
+   
+}
+
+#playersList > *{
+    display: block;
+    width:50% ;
+    margin: auto;
+    margin-bottom: 10px;
+
+}
+
+body{
+    margin: 0;
+    background: black;
+}
+.hide{
+    display: none;
+}
+.leading-none{
+    padding-bottom: 30px;
+}
+.btn-stop{
+    width: 100px;
+    background-color: coral;
+    margin-left:10px;
+    padding:5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#music, #sound{
+    color: wheat;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.btn-stop:hover{
+    background-color: rgb(253, 89, 29);
+}
+
+#avatar{
+    display: inline;
+    position: absolute;
+    right:50px;
+    font-size: 25px;
+    font-weight: bold;  
+    color:white;
+    z-index: 9;
+    user-select: none;
+
+}

@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShootingGame</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+    <span id="avatar"></span>
+    <div class="fixed text-white text-sm ml-2 mt-1 select-none scoreDisplay">
+        <span>High Score: </span>
+        <span id="scoreEl">0</span>
+        <button class="btn-stop">pause</button>
+        <span id="music"><i class="fas fa-music"></i></span>
+        <span id="sound"><i class="fas fa-volume-up"></i></span>
+    </div>
+    <div id="modelEl" class="fixed inset-0 flex items-center justify-center">
+        <div id="init" class="bg-white max-w-md w-full p-6 text-center">
+            <h1 id="bigScoreEl" class="text-4xl font-bold leading-none pointDisplay">0</h1>
+            <p class="text-sm text-gray-700 mb-4 pointDisplay">Points</p>
+            <div class="firstDiv">
+                <ul id="playersList"></ul>
+                <button id="newPlayer" class="bg-blue-500 text-white  py-3 rounded-full text-sm w-50">
+                    New Player
+                </button>
+                <button id="oldPlayer" class="bg-blue-500 text-white  py-3 rounded-full text-sm w-50">
+                    Old Player
+                </button>
+
+                <button id="startGameBtn" class="bg-blue-500 text-white w-full py-3 rounded-full text-sm startDisplay">
+                    Start Game
+                </button>
+            </div>
+        </div>
+        <div id="continue" class="hide bg-white max-w-md w-full p-6 text-center">
+            <h1 class="text-4xl font-bold leading-none">Paused</h1>
+            <div>
+                <button id="resume" class="bg-blue-500 text-white w-full py-3 rounded-full text-sm">
+                    resume
+                </button>
+            </div>
+        </div>
+        <button id="continue" class="hide bg-blue-500 text-white w-full py-3 rounded-full text-sm">
+            Continue
+        </button>
+    </div>
+    <canvas></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"></script>
+    <script src="index.js"> </script>
+</body>
+
+</html>
